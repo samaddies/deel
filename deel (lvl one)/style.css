@@ -16,6 +16,30 @@
     background-color: #fafafa;
 
 }
+.smallimg {
+    background-color: #c4b1f960;
+}
+.itis:hover {
+    background-color: #fef0d887;
+    width: 75%;
+}
+.itis:hover .smallimg {
+    background-color: #c4b1f9db;
+}
+.navimgdiv1 {
+  overflow: hidden;
+}
+.navimg1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.navimgdiv2 {
+  overflow: hidden;
+}
+.navimg2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 
 .footer {
     background-color: #fef0d8;
@@ -389,4 +413,124 @@
     height: 28px;
     object-fit: contain;
     display: block;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+.nav-link:hover {
+   background-color: RGB(204, 204, 204);
+
+}
+.vertical-line{
+    width: 2px;
+    height: 300px;
+    border-left: 2px dashed RGB(204, 204, 204);;
+}
+
+.nav-tabs .nav-link.active {
+    border: none;
+    background: none;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-link {
+    color: black;
+}
+
+#myTab .nav-item, #myTab{
+    flex-shrink: 0;
+    scrollbar-width: none;
+}
+
+#home-tab.active, #homemb-tab.active {
+    background-color: RGB(216, 235, 255);
+}
+
+#profile-tab.active, #profilemb-tab.active {
+    background-color: RGB(245, 236, 201);
+}
+
+#contact-tab.active, #contactmb-tab.active {
+    background-color: RGB(246, 240, 254);
+}
+
+#hire-tab.active, #hiremb-tab.active {
+   background-color: RGB(246, 240, 254);
+}
+
+.last-card {
+    background-color: RGB(27, 27, 27);
+}
+.button1:hover {
+   background-color: black;
+}
+@media (max-width: 1024px) {
+    .divbutton {
+        font-size: 10px !important;
+        width: 63%;
+    }
+    .title {
+        font-size: 30px !important;
+    }
+}
+@media (max-width: 578px) {
+    .title {
+        font-size: 30px !important;
+    }
+    .divbutton {
+        width: 73%;
+    }
+}
+
+@media (max-width: 575px) {
+    .testimonial-blur-left,
+    .testimonial-blur-right {
+        display: block !important;
+        width: 7.5vw;
+    }
+    .testimonial-track {
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
+    }
+    .testimonial-card {
+        flex: 0 0 85vw;
+        width: 85vw;
+        scroll-snap-align: center;
+    }
+    .testimonial-thumb {
+        height: 60vw;
+    }
+}
+@media (max-width: 991px) {
+    .testimonial-blur-left,
+    .testimonial-blur-right {
+        display: block !important;
+        width: 10vw;
+    }
+    .testimonial-track {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .testimonial-card {
+        flex: 0 0 80vw;
+        width: 80vw;
+        scroll-snap-align: center;
+    }
+    .testimonial-thumb {
+        height: 50vw;
+    }
+}
+@media (max-width: 1024px) {
+    .payroll {
+      font-size: 20px;
+    }
+    
+}
+@media (max-width: 991px) {
+    .tab-pane {
+        gap: 50px !important;
+    } 
 }
