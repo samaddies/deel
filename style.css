@@ -11,6 +11,12 @@
         'GRAD' 0,
         'opsz' 24
 }
+.dd.show > span {
+    transform: rotate(180deg);
+}
+.dd > span {
+    transition: transform 0.3s ease;
+}
 
 .solu {
     background-color: #fafafa;
@@ -404,7 +410,6 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    color: #333;
     cursor: pointer;
 }
 
@@ -444,6 +449,19 @@
     flex-shrink: 0;
     scrollbar-width: none;
 }
+#home-tab.active .spn1{
+    background-color: RGB(177, 216, 252);
+}
+#profile-tab.active .spn2 {
+    background-color: RGB(254, 226, 124);
+}
+#contact-tab.active .spn3 {
+   background-color: RGB(212, 203, 236)
+}
+
+#hire-tab.active .spn4 {
+   background-color: RGB(254, 226, 124);
+}
 
 #home-tab.active, #homemb-tab.active {
     background-color: RGB(216, 235, 255);
@@ -458,7 +476,7 @@
 }
 
 #hire-tab.active, #hiremb-tab.active {
-   background-color: RGB(246, 240, 254);
+   background-color: RGB(245, 236, 201);
 }
 
 .last-card {
@@ -502,6 +520,9 @@
     }
     .testimonial-thumb {
         height: 60vw;
+    }
+    .custom-width {
+        width: 100% !important;
     }
 }
 @media (max-width: 991px) {
